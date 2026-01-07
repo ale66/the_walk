@@ -1,12 +1,13 @@
 title: The Walk Between Reality and Fantasy
 description: Data Sprint on Generative AI and Fictionality
-remote_theme: pages-themes/academic
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default" # or "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Optional: Add some color
-color_scheme: light
+# color_scheme: light
 
 # Enable search
-search_enabled: false
+# search_enabled: false
 
 # Footer content
 footer_content: "The Keynes Library at Birkbeck-University of London | January 8-10, 2026"
