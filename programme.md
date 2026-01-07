@@ -8,7 +8,8 @@
 
 ---
 
-**The Keynes Library, Birkbeck, University of London**  
+**The Keynes Library, Birkbeck-University of London**  
+
 **Thursday 8 - Friday 9, January 2026**
 
 The proliferation of AI systems capable of generating synthetic text, images, audio, and video is transforming how public knowledge is constructed and how truth is contested. These systems produce content that is realistic in form, but detached from factual grounding — effectively creating a novel kind of algorithmic fiction. 
@@ -33,14 +34,14 @@ We focus on a core property of fiction: fiction is realistic, but not real. It g
 **Venue:** [The Keynes Library, Gordon Square 43, London WC1H 0PD, UK](https://www.bbk.ac.uk/school/creative-arts-culture-and-communication/buildings-and-facilities)
 
 #### 9:30 - 10:30 | Introduction
-**Elena Esposito, Alessandro Provetti, Federico Pilati**
+**E. Esposito, A. Provetti, F. Pilati**
 
 Overview of the aims for the workshop and introduction to the custom large language models developed specifically for the event (trained respectively on: visual collections from the British Museum, English narrative texts from the Project Gutenberg corpus, and journalistic articles from *The Guardian*).
 
 #### 10:30 - 11:00 | Coffee Break
 
 #### 11:00 - 12:30 | Collective Mapping of Key Questions
-**Elena Esposito**
+**E. Esposito**
 
 - Distinctions between fiction, factuality, and journalistic realism in AI-generated content
 - Textual, visual, and structural cues of credibility or fictionality
@@ -51,8 +52,9 @@ Overview of the aims for the workshop and introduction to the custom large langu
 Definition of thematic teams (text, image, news realism; speculative design; digital methods).
 
 #### 13:00 - 14:00 | Lunch
+
 #### 14:00 - 16:00 | Laboratory 1: Testing and Manipulating the Specialised LLMs
-**Alessandro Provetti**
+**A. Provetti**
 
 Hands-on exploration with the three workshop models:
 
@@ -63,7 +65,7 @@ Hands-on exploration with the three workshop models:
 #### 16:00 - 16:30 | Coffee Break
 
 #### 16:30 - 18:00 | Laboratory 2: Early Prototyping
-**Alessandro Provetti**
+**A. Provetti**
 
 Teams develop initial concepts and artefacts, such as:
 
@@ -83,14 +85,14 @@ Teams develop initial concepts and artefacts, such as:
 **Venue:** [The Keynes Library, Gordon Square 43, London WC1H 0PD, UK](https://www.bbk.ac.uk/school/creative-arts-culture-and-communication/buildings-and-facilities)
 
 #### 9:30 - 11:00 | Re-Brainstorming Session
-**Elena Esposito**
+**E. Esposito**
 
 Reflective discussion on day one outputs and refinement of research questions.
 
 #### 11:00 - 11:15 | Coffee Break
 
 #### 11:15 - 13:00 | Laboratory 3: Real-Time Training and Model Adaptation
-**Alessandro Provetti**
+**A. Provetti**
 
 - Adding instructions or annotated data to one or more LLMs
 - Lightweight fine-tuning and rapid model adaptation
@@ -107,7 +109,7 @@ Teams contribute sections to a shared workshop report:
 - Methodological or design-oriented proposals
 
 #### 15:30 - 16:30 | Presentation and Discussion of Reports
-**Elena Esposito, Alessandro Provetti, Federico Pilati**
+**E. Esposito, A. Provetti, F. Pilati**
 
 #### 16:30 - 17:00 | Coffee Break
 
@@ -127,7 +129,7 @@ Open session for the broader University of London community, presenting interim 
 ## Organising Committee
 
 - **E. Esposito, chair** — Bielefeld University & University of Bologna
-- **J. Mckim** — Birkbeck, University of London
+  
 - **F. Pilati** — University of Bologna
-- **A. Provetti** — Birkbeck, University of London
-- **D. Stark** — Columbia University
+  
+- **A. Provetti** — Birkbeck-University of London

@@ -1,3 +1,18 @@
 title: The Walk Between Reality and Fantasy
 description: Data Sprint on Generative AI and Fictionality
-theme: minima
+remote_theme: just-the-docs/just-the-docs
+
+# Optional: Add some color
+color_scheme: light
+
+# Enable search
+search_enabled: true
+
+# Footer content
+footer_content: "Birkbeck, University of London | January 8-10, 2026"
+
+# Navigation
+nav_enabled: true
+
+# Optional: Add logo
+# logo: "/images/logo.png"
