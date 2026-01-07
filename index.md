@@ -1,6 +1,12 @@
+![Keynes Library, Birkbeck College](images/keynes-library.png)
+
 # The Walk Between Reality and Fantasy
 
 ## Data Sprint on Generative AI and Fictionality
+
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md)</sub>
+
+---
 
 ### Context
 
