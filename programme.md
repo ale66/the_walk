@@ -1,4 +1,4 @@
-![Keynes Library, Birkbeck College](images/keynes-library.jpg)
+![Keynes Library, Birkbeck College](images/gordon-square-summer.jpg)
 
 # The Walk Between Reality and Fantasy
 
