@@ -4,6 +4,8 @@
 
 ## Data Sprint on Generative AI and Fictionality
 
+## The Keynes Library, Birkbeck College, University of London, Januray 9–11, 2026
+
 <sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md)</sub>
 
 ---
