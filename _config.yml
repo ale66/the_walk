@@ -1,3 +1,8 @@
 title: The Walk Between Reality and Fantasy
 description: Data Sprint on Generative AI and Fictionality
 remote_theme: pages-themes/cayman
+
+# Optional additions
+show_downloads: false
+github:
+  is_project_page: false
