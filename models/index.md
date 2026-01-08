@@ -260,7 +260,7 @@ The same prompt but with the Agatha Christie style, here we can clearly see the 
 
 An example Jupyter notebook is available on Google Colab:
 
-https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing
+[https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing](https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing)
 
 
 ---
