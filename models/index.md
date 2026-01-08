@@ -4,13 +4,7 @@
 
 
 
-### Documentation
 
-![](./pres.pdf)
-
-### Video
-
-![Watch the video](./PNRR-FAIR-howto.mp4)
 
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
@@ -245,14 +239,29 @@ This two-expert Mixture-of-Experts narrative generator demonstrates how PEFT + m
 
 ### Figure 1
 
+
+![](./images/prompt-1.jpeg)
+
 Using the same prompt we can see we can see the different styles. The orchestrator can choose the style according to the user preference. In this case H.P. Lovecraft
 
 ### Figure 2
 
 The same prompt but with the Agatha Christie style, here we can clearly see the output with a different narrative style.
 
+
+![](./images/prompt-2.jpeg)
+
+
+
+### Getting started: the video tutorial
+
+[Watch the video](./PNRR-FAIR-howto.mp4)
+
+
 An example Jupyter notebook is available on Google Colab:
+
 https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing
+
 
 ---
 

@@ -1,22 +1,55 @@
-# Fine-tuned Large Language Models for the PNRR-FAIR project
+---
+title: 'GenAI models for PNRR-FAIR'
+author: 'ale66'
+format: 
+  revealjs:
+    footer: '[github.com/ale66/the_walk](https://github.com/ale66/the_walk)&nbsp;&nbsp;&nbsp;'
+    theme: [moon]
+    preview-links: auto
+    chalkboard: 
+      boardmarker-width: 2
+from: markdown+emoji
+execute:
+  echo: true
+---
 
-**Technical report v. 2.1**
+# Fine-tuned LLMs
+
+
+## Technical report to PNRR-FAIR
 
 Prepared by G. Monti and A. Provetti, Network Centrality Labs and Birkbeck, University of London
 
 ## Premise
 
-Generative AI is transforming the media landscape. Tools capable of producing synthetic text, images, video, and audio are rapidly diffusing across newsrooms, social platforms, and search engines. While these outputs fuel innovation and creativity, they also trigger profound uncertainty — especially around how we distinguish between truth and fabrication, reporting and fiction, evidence and illusion. These technological advancements interrogate Computational Social Science.
+Generative AI is transforming the media landscape. 
+
+Tools capable of producing synthetic text, images, video, and audio are rapidly diffusing across newsrooms, social platforms, and search engines. 
+
+While these outputs fuel innovation and creativity, they also trigger profound uncertainty — especially around how we distinguish between truth and fabrication, reporting and fiction, evidence and illusion. 
+
+These technological advancements interrogate Computational Social Science.
 
 ## Description of work
 
-This technical annex describes preparatory work done at Prof. E. Esposito's request, in the context of the PNRR FAIR grant. We describe the end-to-end development of three bespoke Generative models trained on openly-accessible datasets in i) image generation (jewelry), ii) narrative, British (A. Christie) and American (HP Lovecraft) and iii) contemporary British newsarticles (The Guardian, public part of the site).
 
-The project combines automated web-based data acquisition, LLM-powered metadata generation, and fine-tuning of a diffusion model using the DreamBooth LoRA method for Stable Diffusion XL. The outcome is a fully reproducible pipeline capable of producing high-fidelity images of historical jewellery in the stylistic tradition of museum photography.
+- image generation (jewelry);
+  
+- narrative, British (A. Christie) and American (HP Lovecraft) and 
+  
+- contemporary British newsarticles (The Guardian, public part of the site).
+
+
 
 ## 1. Data Acquisition from the Victoria & Albert Museum API
 
-The first stage consisted of programmatically harvesting museum-quality imagery from the Victoria & Albert Museum (V&A) API. A custom Python script was used to issue a targeted query for the keyword "Coronet", selecting objects classified within the jewellery domain. The API returns structured metadata, including system identifiers, titles, summaries, and IIIF-based image access URLs. IIIF (International Image Interoperability Framework) facilitates standardised access to high-resolution cultural heritage images, making it particularly appropriate for dataset construction in digital humanities and computer vision research.
+
+A custom Python script was used to issue a targeted query for the keyword "Coronet", selecting objects classified within the jewellery domain. 
+
+The API returns structured metadata, including system identifiers, titles, summaries, and IIIF-based image access URLs.
+
+
+---
 
 The script iterates through all records, parsing and validating metadata fields such as:
 
@@ -25,13 +58,24 @@ The script iterates through all records, parsing and validating metadata fields 
 - `_summary`,
 - `_iiif_image_base_url` (image endpoint).
 
-For each item, the pipeline downloads the highest available resolution (up to 2500px width), ensuring that the dataset captures sufficient visual detail to represent metal textures, gemstones, engraving, filigree, and other material-specific features essential for high-quality generative modelling. Images are stored locally alongside a corresponding metadata JSONL file, which records filename, descriptive text, and source URL. This method produces a clean, machine-learnable corpus with reproducible provenance, consistent naming conventions, and uniform resolution.
+---
 
-This automated acquisition approach mirrors established principles in dataset curation for computational aesthetics and digital heritage, where systematically collected, labelled, and standardised images form the basis for generative or discriminative modelling.
+For each item, the pipeline downloads the highest available resolution (up to 2500px width)
+
+Images are stored locally alongside a corresponding metadata JSONL file
+
+# Caption generation
+
 
 ## 2. Automated Caption Generation Using GPT-4.1
 
-Although the V&A metadata is rich, its language varies widely in length, formality, and specificity. For generative model training, however, it is crucial to have consistent, descriptive captions focusing on the visible properties of each object. To produce a uniform caption set, the pipeline employs GPT-4.1 for computer-vision-guided automatic annotation.
+Although the V&A metadata is rich, its language varies widely in length, formality, and specificity. 
+
+LLMs require consistent, descriptive captions focusing on the visible properties of each object. 
+
+GPT-4.1 for computer-vision-guided automatic annotation.
+
+---
 
 Each image is first base64-encoded and then passed to the GPT-4.1 chat.completions endpoint with a structured instruction:
 
@@ -42,15 +86,22 @@ Each image is first base64-encoded and then passed to the GPT-4.1 chat.completio
 - State overall physical condition,
 - Prefix with a consistent template ("a high-quality photo of a real historical TOK jewellery piece…").
 
-This ensures terminological cohesion, which is critical for diffusion-based training, where textual conditioning relies heavily on stable linguistic patterns.
+terminological cohesion is critical 
 
-The result is a `metadata_gpt4.jsonl` file containing pairs of `{file_name, caption}`, producing a harmonised training set in which each input image is aligned with a precise, factual, non-poetic descriptive caption. This is a form of synthetic annotation applied to cultural heritage images and aligns with recent research in multimodal representation learning, where large language–vision models provide expert-level labelling at scale.
+The result is a `metadata_gpt4.jsonl` file containing pairs of `{file_name, caption}`, 
+
+
 
 ## 3. Model Training: DreamBooth LoRA for Stable Diffusion XL
 
-With both the image dataset and the caption file prepared, the next stage involved fine-tuning Stable Diffusion XL (SDXL) using DreamBooth LoRA. LoRA (Low-Rank Adaptation) is an efficient fine-tuning technique that injects a small set of learned layers into a pre-trained diffusion model without the computational overhead of full-model training. This approach preserves the general generative capabilities of SDXL while specialising its output domain toward museum-style jewellery photography.
+With both the image dataset and the caption file
 
-Key design choices include:
+fine-tuning Stable Diffusion XL (SDXL) using DreamBooth LoRA. 
+
+LoRA (Low-Rank Adaptation) injects a small set of learned layers into a pre-trained diffusion model without the computational overhead of full-model training. 
+
+---
+
 
 - **Base model:** `stabilityai/stable-diffusion-xl-base-1.0`
 - **VAE fix:** `madebyollin/sdxl-vae-fp16-fix`
@@ -76,9 +127,18 @@ The contributions are threefold:
 2. A synthetic caption generation method that leverages GPT-4.1 for precise, structured, descriptive annotations aligned with visual conditioning needs.
 3. A specialised generative model (SDXL LoRA) capable of producing museum-style images with stylistic and material fidelity.
 
-### Image Comparison
+## Image Comparison
 
 Image 1 from the standard stable diffusion without LoRa, the second after the fine tuning.
+
+![](./images/diamond1.png)
+
+
+---
+
+![](./images/diamond-2.png)
+
+---
 
 The two images show the difference between a generic, untrained model and the same model after fine-tuning on museum ring photos.
 
@@ -88,9 +148,23 @@ The use of a fictional word "TOK" helps the model to follow the additional added
 
 The first jewelry image has flaws typical of an untrained diffusion model: the metal texture looks inconsistent, the shape is slightly distorted, and watermark-like artefacts appear because the base model imitates stock-photo patterns. The lighting is flat and not consistent with real museum catalogue photography.
 
-The second image, produced after training, is noticeably more accurate. The watermark artefacts are gone, the engraving is sharper, and the gemstone reflects light more realistically. The overall illumination matches the neutral, controlled museum style used for archival documentation. The fine-tuned LoRA clearly learned the visual language of museum cataloguing, producing cleaner, more coherent, and more professional jewellery imagery.
+---
 
-### Example Generation
+The second image, produced after training, is noticeably more accurate. 
+
+The watermark artefacts are gone, the engraving is sharper, and the gemstone reflects light more realistically. 
+
+The overall illumination matches the neutral, controlled museum style used for archival documentation. 
+
+The fine-tuned LoRA clearly learned the visual language of museum cataloguing, producing cleaner, more coherent, and more professional jewellery imagery.
+
+---
+
+![](./images/diamond-2.png)
+
+
+
+## Example Generation
 
 The model can follow semantically complex prompts:
 
@@ -104,13 +178,19 @@ https://drive.google.com/drive/folders/1bZtsh8awCpYiIGpz3AL2atPGoXgCLRin
 
 ---
 
-## A Lightweight Mixture-of-Experts (MoE) Architecture Using Two LoRA-Fine-Tuned Gemma-2B Models for Stylistic Narrative Generation
+# Stylistic Narrative Generation
 
-This work presents a modular Mixture-of-Experts (MoE) architecture composed of two independently fine-tuned narrative-style models—`theoracle/agatha` and `theoracle/hplovecraft`—built on top of Google's Gemma-2-2B-IT base model. The system uses Hugging Face Transformers, a keyword-based routing module, and LoRA adapters for parameter-efficient finetuning (PEFT). It demonstrates how specialised stylistic "experts" can be composed into a controllable, scalable, and interpretable generation framework without resorting to full multi-style training or large-scale model merging.
+This work presents a modular Mixture-of-Experts (MoE) architecture composed of two independently fine-tuned narrative-style models—`theoracle/agatha` and `theoracle/hplovecraft`—built on top of Google's Gemma-2-2B-IT base model.
+
+ The system uses HF Transformers, a keyword-based routing module, and LoRA adapters for parameter-efficient finetuning (PEFT). 
+ 
+ It demonstrates how specialised stylistic "experts" can be composed into a controllable, scalable, and interpretable generation framework without resorting to full multi-style training or large-scale model merging.
 
 ## 1. Technical Motivation
 
-Large language models (LLMs) often produce blended stylistic approximations when prompted for specific literary voices. This occurs because the model's representation of style is distributed across many layers and not cleanly isolated. In contrast, parameter-efficient fine-tuning (PEFT) with LoRA allows the creation of small, targeted matrices that modify only a tiny subset of the base model's parameters.
+Large language models (LLMs) often produce blended stylistic approximations when prompted for specific literary voices.
+
+ This occurs because the model's representation of style is distributed across many layers and not cleanly isolated. In contrast, parameter-efficient fine-tuning (PEFT) with LoRA allows the creation of small, targeted matrices that modify only a tiny subset of the base model's parameters.
 
 By training two separate LoRA adapters—one on a Lovecraft corpus, the other on an Agatha Christie dataset—you obtain true stylistic decoupling. Each adapter represents a standalone stylistic expert. No catastrophic forgetting occurs, because each model is fine-tuned independently and loaded dynamically rather than merged.
 
@@ -169,15 +249,15 @@ Its training objective is identical to the Lovecraft expert, ensuring symmetric 
 
 Your Python code implements a deterministic, keyword-based router that selects the correct expert model for any request. Although simple, this choice offers three key technical advantages:
 
-### 5.1 Interpretability
+## 5.1 Interpretability
 
 The selection criteria ("lovecraft", "cthulhu", "mystery", "agatha") are visible and auditable. This transparency is critical for predictable stylistic control.
 
-### 5.2 Zero latency overhead
+## 5.2 Zero latency overhead
 
 Unlike a neural gating layer (used in large MoE LLMs like Mixtral), the keyword router adds no inference cost.
 
-### 5.3 Avoiding model merging
+## 5.3 Avoiding model merging
 
 Instead of merging LoRAs—often leading to style bleed—you load only the required LoRA at runtime:
 
@@ -229,16 +309,31 @@ The the implementation presented here offers several advantages:
 
 This two-expert Mixture-of-Experts narrative generator demonstrates how PEFT + modular routing can achieve precise stylistic conditioning without large-scale training or model blending. By pairing two Gemma-2B-IT LoRA adapters with a transparent Python orchestrator, the system delivers clean stylistic output, low inference cost, and easily extensible architecture. It shows the practical value of MoE principles for creative-writing applications and provides a solid foundation for future expansions—such as adding more experts, upgrading the router to semantic parsing, or building a unified front-end for real-time narrative generation.
 
-### Figure 1
+## Figure 1
+
+
+![](./images/prompt-1.jpeg)
 
 Using the same prompt we can see we can see the different styles. The orchestrator can choose the style according to the user preference. In this case H.P. Lovecraft
 
-### Figure 2
+## Figure 2
 
 The same prompt but with the Agatha Christie style, here we can clearly see the output with a different narrative style.
 
+
+![](./images/prompt-2.jpeg)
+
+# Hands-on
+
+### Getting started: the video tutorial
+
+[Watch the video](./PNRR-FAIR-howto.mp4)
+
+
 An example Jupyter notebook is available on Google Colab:
-https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing
+
+[https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing](https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing)
+
 
 ---
 
