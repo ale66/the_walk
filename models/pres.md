@@ -1,17 +1,3 @@
-# The Walk Between Reality and Fantasy
-
-## Data Sprint on Generative AI and Fictionality
-
-
-
-### Documentation
-
-![](./pres.pdf)
-
-### Video
-
-![Watch the video](./PNRR-FAIR-howto.mp4)
-
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
 **Technical report v. 2.1**
