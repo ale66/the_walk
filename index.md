@@ -6,7 +6,7 @@
 
 ### The Keynes Library, Birkbeck-University of London, January 9–11, 2026
 
-<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md)</sub>
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Models](./models/index.html)</sub>
 
 ---
 
