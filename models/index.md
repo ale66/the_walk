@@ -3,9 +3,6 @@
 ## Data Sprint on Generative AI and Fictionality
 
 
-
-
-
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
 **Technical report v. 2.1**
@@ -258,10 +255,18 @@ The same prompt but with the Agatha Christie style, here we can clearly see the 
 [Watch the video](./PNRR-FAIR-howto.mp4)
 
 
-An example Jupyter notebook is available on Google Colab:
+Example Jupyter notebooks are available on Google Colab:
+
+Narrative:
 
 [https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing](https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing)
 
+Jewlery:
+[https://colab.research.google.com/drive/1TCWfoOFXIVgYIXT2_dxNLE1gmRsp3FwI?usp=sharing](https://colab.research.google.com/drive/1TCWfoOFXIVgYIXT2_dxNLE1gmRsp3FwI?usp=sharing)
+
+Journalism:
+
+[]()
 
 __networkcentralitylabs@gmail.com__
 
