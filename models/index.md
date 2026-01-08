@@ -264,18 +264,13 @@ Narrative:
 Jewlery:
 [https://colab.research.google.com/drive/1TCWfoOFXIVgYIXT2_dxNLE1gmRsp3FwI?usp=sharing](https://colab.research.google.com/drive/1TCWfoOFXIVgYIXT2_dxNLE1gmRsp3FwI?usp=sharing)
 
-Journalism:
+## Access Credentials
 
-[]()
+user: `networkcentralitylabs@gmail.com`
 
-Instructions to use the models:
+password: `Gabrprov!23`
 
-user: __networkcentralitylabs@gmail.com__
-
-password: *Gabrprov!23*
-
-
-Hugging Face key: __hf_YJKqjpDcPCfqXjIemUwjDzrNhllLWoqCua__
+Hugging Face key: `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`
 
 
 ## Journalism
@@ -321,24 +316,24 @@ On Monday, Taglovailoa said he would be happy to play for a new team next season
 
 ```python
 replication_prompt = """
-Miami Dolphins have fired their head coach Mike McDaniel.
+    Miami Dolphins have fired their head coach Mike McDaniel.
 
-The team missed the playoffs for the second straight season.
+    The team missed the playoffs for the second straight season.
 
-Their record under McDaniel was 35-33.
+    Their record under McDaniel was 35-33.
 
-McDaniel was young and well educated: appointed at the age of 38 in 2022 he studied in Yale.
+    McDaniel was young and well educated: appointed at the age of 38 in 2022 he studied in Yale.
 
-Stephen Ross is the Dolphins owner and said:
-'After careful evaluation and extensive discussions since the season ended, I have made the decision that our organization is in need of comprehensive change'
+    Stephen Ross is the Dolphins owner and said:
+    'After careful evaluation and extensive discussions since the season ended, I have made the decision that our organization is in need of comprehensive change'
 
-He also said: 'I love Mike and want to thank him for his hard work, commitment, and the energy he brought to our organization. Mike is an incredibly creative football mind whose passion for the game and his players was evident every day. I wish him and his family the best moving forward.'
+    He also said: 'I love Mike and want to thank him for his hard work, commitment, and the energy he brought to our organization. Mike is an incredibly creative football mind whose passion for the game and his players was evident every day. I wish him and his family the best moving forward.'
 
-Tua Tagovailoa is the former first-round pick quarterback who was benched this season.
+    Tua Tagovailoa is the former first-round pick quarterback who was benched this season.
 
-He said on Monday that he would be happy to play for a new team next season.
+    He said on Monday that he would be happy to play for a new team next season.
 
-He said: 'That would be dope. I would be good with it.'
+    He said: 'That would be dope. I would be good with it.'
 """
 ```
 
