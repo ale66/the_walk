@@ -282,37 +282,45 @@ Hugging Face key: __hf_YJKqjpDcPCfqXjIemUwjDzrNhllLWoqCua__
 
 Try out the model fine-tuned on The Guardian articles:
 
+[colab.research.google.com/drive/1vKaLsXBlnH1H0I8YyOL8yq6ylky14QCM?usp=sharing](https://colab.research.google.com/drive/1vKaLsXBlnH1H0I8YyOL8yq6ylky14QCM?usp=sharing)
 
 A real article that reports about an actual event: *the firing of the Miami Dolphins coach Mike McDaniel after missing the playoffs for the second season in a row.*
 
 [www.theguardian.com/sport/2026/jan/08/dolphins-fire-mike-mcdaniel-after-missing-playoffs-for-second-season-in-row](https://www.theguardian.com/sport/2026/jan/08/dolphins-fire-mike-mcdaniel-after-missing-playoffs-for-second-season-in-row)
 
 
+![](./images/example-news.png)
+
+
 ```text
 The Miami Dolphins have fired head coach Mike McDaniel after the team missed the playoffs for the second straight season.
 
 “After careful evaluation and extensive discussions since the season ended, I have made the decision that our organization is in need of comprehensive change,” Dolphins owner Stephen Ross said in a statement on Thursday.
-Rams Panthers FootballCarolina Panthers quarterback Bryce Young leaves the field after their win in an NFL football game against the Los Angeles Rams, Sunday, Nov. 30, 2025, in Charlotte, N.C. (AP Photo/Rusty Jones)
-Kicking zones and a ban on losing teams: NFL playoff tweaks we’d like to see
-Read more
 
-“I love Mike and want to thank him for his hard work, commitment, and the energy he brought to our organization. Mike is an incredibly creative football mind whose passion for the game and his players was evident every day. I wish him and his family the best moving forward.”
+“I love Mike and want to thank him for his hard work, commitment, and the energy he brought to our organization. Mike is an incredibly creative football mind whose passion for the game and his players was evident every day. 
+I wish him and his family the best moving forward.”
 
 The move is somewhat of a surprise after McDaniel told reporters on Monday that he was part of the team’s search for a new general manager.
 
-The Dolphins went 35-33 under McDaniel, reaching the playoffs in his first two seasons but losing in the first round each time. Miami missed the postseason in 2024 after being eliminated by the Jets in the regular-season finale. This season, their postseason hopes ended with a loss to Pittsburgh in Week 15, ensuring their 25-year playoff-win drought – the longest streak in the NFL – would continue.
+The Dolphins went 35-33 under McDaniel, reaching the playoffs in his first two seasons but losing in the first round each time. 
+Miami missed the postseason in 2024 after being eliminated by the Jets in the regular-season finale. 
+This season, their postseason hopes ended with a loss to Pittsburgh in Week 15, ensuring their 25-year playoff-win drought – the longest streak in the NFL – would continue.
 
-Miami parted ways with longtime general manager Chris Grier at the end of October and began their search for a new general manager this week. But a disjointed finish to the season that saw former first-round pick Tua Tagovailoa benched proved the final straw for Ross, who decided to move on from McDaniel.
+Miami parted ways with longtime general manager Chris Grier at the end of October and began their search for a new general manager this week. 
+But a disjointed finish to the season that saw former first-round pick Tua Tagovailoa benched proved the final straw for Ross, who decided to move on from McDaniel.
 
-The Yale-educated McDaniel was seen as emblematic of a generation of young, ambitious head coaches when he was appointed by the Dolphins at the age of 38 in 2022. He had impressed the Dolphins with his work as offensive coordinator of the San Francisco 49ers and soon turned around a sputtering Miami offense. In his first season in charge, the Dolphins finished sixth in total offense and were first the following season.
+The Yale-educated McDaniel was seen as emblematic of a generation of young, ambitious head coaches when he was appointed by the Dolphins at the age of 38 in 2022. 
+He had impressed the Dolphins with his work as offensive coordinator of the San Francisco 49ers and soon turned around a sputtering Miami offense. 
+In his first season in charge, the Dolphins finished sixth in total offense and were first the following season.
 
-However, that momentum has stalled and Tagovailoa has struggled mightily among injuries and a loss of form. On Monday, Taglovailoa said he would be happy to play for a new team next season.
+However, that momentum has stalled and Tagovailoa has struggled mightily among injuries and a loss of form. 
+On Monday, Taglovailoa said he would be happy to play for a new team next season.
 
 “That would be dope,” he said. “I would be good with it.”
 ```
 
 ```python
-prompt = """
+replication_prompt = """
 Miami Dolphins have fired their head coach Mike McDaniel.
 
 The team missed the playoffs for the second straight season.
@@ -320,10 +328,19 @@ The team missed the playoffs for the second straight season.
 Their record under McDaniel was 35-33.
 
 McDaniel was young and well educated: appointed at the age of 38 in 2022 he studied in Yale.
+
+Stephen Ross is the Dolphins owner and said:
+'After careful evaluation and extensive discussions since the season ended, I have made the decision that our organization is in need of comprehensive change'
+
+He also said: 'I love Mike and want to thank him for his hard work, commitment, and the energy he brought to our organization. Mike is an incredibly creative football mind whose passion for the game and his players was evident every day. I wish him and his family the best moving forward.'
+
+Tua Tagovailoa is the former first-round pick quarterback who was benched this season.
+
+He said on Monday that he would be happy to play for a new team next season.
+
+He said: 'That would be dope. I would be good with it.'
 """
 ```
-
-
 
 ---
 

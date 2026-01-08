@@ -4,7 +4,7 @@
 
 ## An International Workshop
 
-<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md)</sub>
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Models](./models/index.html)</sub>
 
 ---
 
