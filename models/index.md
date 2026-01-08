@@ -263,6 +263,10 @@ An example Jupyter notebook is available on Google Colab:
 [https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing](https://colab.research.google.com/drive/14tMxXR3ssGLcubdp_Lh7xwPoe7dvNZNy?usp=sharing)
 
 
+__networkcentralitylabs@gmail.com__
+
+*Gabrprov!23*
+
 ---
 
 *Network Centrality Labs*  
