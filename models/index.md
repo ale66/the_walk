@@ -2,7 +2,6 @@
 
 ## Data Sprint on Generative AI and Fictionality
 
-
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
 **Technical report v. 2.1**
