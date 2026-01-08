@@ -89,18 +89,18 @@ Teams develop initial concepts and artefacts, such as:
 
 Reflective discussion on day one outputs and refinement of research questions.
 
-#### 11:00 - 11:15 | Coffee Break
+#### 11:00 - 11:30 | Coffee Break
 
-#### 11:15 - 13:00 | Laboratory 3: Real-Time Training and Model Adaptation
+#### 11:30 - 13:00 | Laboratory 3: Real-Time Training and Model Adaptation
 **A. Provetti**
 
 - Adding instructions or annotated data to one or more LLMs
 - Lightweight fine-tuning and rapid model adaptation
 - Tracing shifts in style, factual grounding, and fictionality cues
 
-#### 13:00 - 14:00 | Lunch
+#### 13:00 - 14:15 | Lunch
 
-#### 14:00 - 15:30 | Collaborative Report Writing
+#### 14:15 - 15:30 | Collaborative Report Writing
 
 Teams contribute sections to a shared workshop report:
 
