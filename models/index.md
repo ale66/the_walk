@@ -341,6 +341,18 @@ replication_prompt = """
 """
 ```
 
+
+# Conversations with the character
+
+Please see the *persona* model [huggingface.co/ylliprifti/documentary-personas](https://huggingface.co/ylliprifti/documentary-personas)
+
+A quick Colab notebook lets us speak with the people appearing in Bartek's docufilm:
+
+![](https://vimeopro.com/user18592354/the-derek-jarman-lab-films-selection/video/805250026)
+
+ [colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing](https://colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing)
+
+
 ---
 
 *Network Centrality Labs*  
