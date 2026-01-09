@@ -270,7 +270,11 @@ user: `networkcentralitylabs@gmail.com`
 
 password: `Gabrprov!23`
 
-Hugging Face key: `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`
+Hugging Face keys:
+
+Thursday: `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`
+
+Friday: `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`
 
 
 ## Journalism
