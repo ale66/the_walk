@@ -350,6 +350,12 @@ A quick Colab notebook lets us speak with the people appearing in [Bartek's Dzia
 
  [colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing](https://colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing)
 
+## Collective final report
+
+Please click here to write your part:
+
+[docs.google.com/document/d/1Um0gbjf-8qk9UnYVvcyF7a9zsOmH2V-j5zmYev-rcLI/edit?usp=sharing](https://docs.google.com/document/d/1Um0gbjf-8qk9UnYVvcyF7a9zsOmH2V-j5zmYev-rcLI/edit?usp=sharing)
+
 
 ---
 
