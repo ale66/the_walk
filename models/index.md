@@ -272,9 +272,7 @@ password: `Gabrprov!23`
 
 Hugging Face keys:
 
-Thursday: `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`
 
-Friday: `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`
 
 
 ## Journalism
