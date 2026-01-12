@@ -7,6 +7,8 @@
 **Devi: a documentary on education by the Derek Jarman Lab**
 
 
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Models](./models/index.html)</sub>
+
 ![Devi Documentary](https://vimeopro.com/user18592354/the-derek-jarman-lab-films-selection/video/805250026){width=300px}
 
 

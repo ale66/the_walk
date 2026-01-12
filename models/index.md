@@ -4,6 +4,8 @@
 
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Film](./models/film.html)</sub>
+
 **Technical report v. 2.1**
 
 Prepared by G. Monti and A. Provetti, Network Centrality Labs and Birkbeck, University of London
