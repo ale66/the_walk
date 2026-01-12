@@ -4,7 +4,7 @@
 
 # Fine-tuned Large Language Models for the PNRR-FAIR project
 
-<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Film](./models/film.html)</sub>
+<sub>[Home](index.md) | [Programme](programme.md) | [Logistics](logistics.md) | [Film](./models/film.md)</sub>
 
 **Technical report v. 2.1**
 
@@ -346,11 +346,7 @@ replication_prompt = """
 
 Please see the *persona* model [huggingface.co/ylliprifti/documentary-personas](https://huggingface.co/ylliprifti/documentary-personas)
 
-A quick Colab notebook lets us speak with the people appearing in [Bartek's Dziadosz](https://blog.jarmanlab.org/bartek-dziadosz/#page-content) docufilm:
-
-[vimeopro.com/user18592354/the-derek-jarman-lab-films-selection/video/805250026](https://vimeopro.com/user18592354/the-derek-jarman-lab-films-selection/video/805250026)
-
- [colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing](https://colab.research.google.com/drive/1o1o9hvk3XmfoIfhCrD9yVKaZkEdz_aoA?usp=sharing)
+More details are in the [film](film.md) section.
 
 ## Collective final report
 
