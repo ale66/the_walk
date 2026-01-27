@@ -218,6 +218,22 @@ Realism depends on who's looking
 NT
 When does AI matters?
 
+MS
+with heavily redacted photos, example: HDR in the prize-winning photo for 2011
+
+EE
+We use the data to find something that is real in the data
+
+DS
+What if there's 1M photograph and AI creates a consensus image
+
+Definition: GenAI as constantly testing of reality
+
+Thursday: `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`
+
+Friday: `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`
+
+
 
 
 
